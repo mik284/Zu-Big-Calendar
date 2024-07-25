@@ -1,8 +1,10 @@
+import { Image } from 'antd';
+
 const HomePage: React.FC = () => {
   return (
     <>
-      <div className="p-8 flex flex-col md:flex-row items-start align-baseline w-full">
-        <div className="flex-1 md:mr-8 mb-6 md:mb-0">
+      <div className="p-8 flex flex-col md:flex-row items-center">
+        <div className="flex-1 md:mr-8 mb-6 md:mb-0 ml-8">
           <h1 className="text-4xl font-bold mb-4">
             Welcome to Program Line Up
           </h1>
@@ -19,11 +21,12 @@ const HomePage: React.FC = () => {
             <li>Receive reminders for upcoming events</li>
           </ul>
         </div>
-        <div className="flex-1">
-          <img
+        <div className="flex">
+          <Image
+            preview={false}
             src={'/assets/images/plannner.png'}
             alt="Program Line Up Illustration"
-            className="size-50"
+            className="size-70 object-scale-down items-center"
           />
         </div>
       </div>
