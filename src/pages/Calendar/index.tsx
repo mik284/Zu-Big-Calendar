@@ -26,7 +26,7 @@ const CalendarPage: React.FC = () => {
   ];
   return (
     <div className="max-h-svh h-screen mt-4">
-      <section className="h-inherit">
+      <section className="h-[700px]">
         <Calendar
           localizer={localizer}
           events={myEventsList}
