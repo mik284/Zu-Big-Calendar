@@ -6,6 +6,9 @@ module.exports = {
       },
     },
   },
+  plugins: [
+    require('tailwindcss-animate'),
+  ],
   content: [
     './src/pages/**/*.tsx',
     './src/components/**/*.tsx',

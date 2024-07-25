@@ -1,8 +1,15 @@
-import { Outlet } from '@umijs/max';
+import { history, Outlet } from '@umijs/max';
 import { ConfigProvider } from 'antd';
 import Navbar from '../Navbar';
+import Footer from '../Footer';
+import { useEffect } from 'react';
 
 function Layout() {
+  useEffect(() => {
+    history.listen(() => {
+      window.scrollTo(0, 0);
+    });
+  }, []);
   return (
     <div>
       <ConfigProvider
@@ -18,6 +25,7 @@ function Layout() {
             <Navbar/>
             <Outlet />
           </div>
+          <Footer/>
         </div>
       </ConfigProvider>
     </div>
