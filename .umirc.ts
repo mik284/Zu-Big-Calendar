@@ -1,4 +1,4 @@
-import { defineConfig } from '@umijs/max';
+import { defineConfig } from "@umijs/max";
 
 export default defineConfig({
   antd: {},
@@ -24,8 +24,20 @@ export default defineConfig({
           path: '/home',
           component: './Home',
         },
+        {
+          name: 'Calendar',
+          path: '/calendar',
+          component: './Calendar',
+        },
+        {
+          name: 'About Program-Line UP',
+          path: '/about',
+          component: './About',
+        },
       ],
     },
   ],
+
   npmClient: 'pnpm',
+  tailwindcss: {},
 });
